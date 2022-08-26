@@ -1,8 +1,13 @@
 ## Custom-Home-UI
 Custom home screen UI for your browser with customizable style
+You can support me by star this repository  
 
 **Preview :**
 ![Preview](https://cdn.discordapp.com/attachments/830539152797859902/1012807502888456262/preview.png)
+
+### Read This
+This HomeScreen make in 1980x1080 resolution.
+if you have lower resolution or higher you can hold ctrl and click + or - to resize zoom and get better view and size.
 
 ### How download it ?
 For use, you need go to __Releases__ Section and click on last version
