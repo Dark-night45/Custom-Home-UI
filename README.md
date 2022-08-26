@@ -16,3 +16,4 @@ you can add this to new page and everytime open new page, you can see customized
 
 #### Microsoft Edge :
 ![Edge](http://dark-night.rf.gd/github/Edge-Custom-HomeScreen-UI.gif)
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
