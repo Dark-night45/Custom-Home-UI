@@ -6,7 +6,7 @@ let taskclock = document.getElementById("taskbar-clock");
 let taskbar = document.getElementById("taskbar");
 let version = document.getElementById("version");
 let sdate = document.getElementById("date-show");
-let sf = document.getElementById("search-form"); //Search Form
+let sf = document.getElementById("search-form");
 
 function setCookie(name,value,minute) {
   var expires = "";
