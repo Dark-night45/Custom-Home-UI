@@ -1,0 +1,389 @@
+body{
+  background-image: url(background/0.jpg);
+  /*You can copy your wallpaper in assets/background and put file name here*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  background-color: transparent;
+  padding: 20px;
+  user-select: none;
+}
+header div #clock-show{
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  margin: 0;
+  width: 164px;
+  padding: 15px 15px 40px 15px;
+  backdrop-filter: blur(20px);
+  border-radius: 5px;
+  position: relative;
+  left: -250px;
+  animation: coming-left 1.5s alternate ease forwards;
+}
+header div #clock-show{
+  font-size: 2em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header div #date-show{
+  border-radius: 2px;
+  font-size: 0.9em;
+  margin-left: 16px;
+  position: relative;
+  top: -32px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  left: -250px;
+  animation: coming-left 1.6s alternate ease forwards;
+}
+
+header #account p{
+  color: white;
+  padding: 15px 60px 15px 15px;
+  margin: 0;
+  float: right;
+  margin-right: 22px;
+  margin-top: 10px;
+  backdrop-filter: blur(20px);
+  border-radius: 100px;
+  position: fixed;
+  right: -200px;
+  animation: coming-right 1.3s alternate ease forwards;
+  font-size: 1em;
+  transition: .3s;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+header #account img{
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  width: 42px;
+  margin: 0;
+  float: right;
+  margin-right: 30px;
+  margin-top: 15px;
+  backdrop-filter: blur(20px);
+  border-radius: 100px;
+  position: fixed;
+  right: -80px;
+  animation: coming-right 1.5s alternate ease forwards;
+  font-size: 1em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+#account:hover span{
+  opacity: 1;
+  visibility: visible;
+}
+#account:hover p{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+header #account span{
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  margin: 75px 25px 0 0;
+  background-color: rgba(45, 45, 45, 0.8);
+  padding: 10px;
+  border-radius: 7px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.85);
+  transition: 0.2s;
+}
+
+header #link{
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 5px;
+  width: fit-content;
+  height: 70px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -120px;
+  animation: coming-top 1.5s alternate ease forwards;
+}
+header #link div{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+}
+header #link a{
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.95em;
+  font-weight: 350;
+  color: white;
+  transition: .3s;
+}
+header #link a:hover{
+  background-color: rgba(255, 255, 255, 0.05);
+}
+header #link a i{
+  margin-right: 5px;
+  color: rgba(255, 255, 255, 0.9);
+}
+header #link .linkf1{
+  margin-right: 10px;
+}
+
+@keyframes coming-left{
+  to{
+    left: 0;
+  }
+}
+@keyframes coming-right{
+  to{
+    right: 0;
+  }
+}
+@keyframes going-right{
+  from{
+    right: 0px;
+  }
+  to{
+    right: -400px;
+  }
+}
+@keyframes coming-top{
+  to{
+    top: 0;
+  }
+}
+@keyframes coming-bottom{
+  to{
+    bottom: 0;
+  }
+}
+
+header #split{
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 1px;
+  height: 80px;
+  position: relative;
+  margin-top: 5px;
+  margin-left: 25px;
+  margin-right: 25px;
+  top: -120px;
+  animation: coming-top 1.2s alternate ease forwards;
+}
+
+main{
+  margin-top: 75px;
+}
+#logo{
+  user-select: none;
+}
+#search{
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  width: 450px;
+  border-radius: 100px;
+  padding: 10px 5px;
+  margin-top: 35px;
+  user-select: none;
+}
+#search input{
+  overflow: hidden;
+  width: 365px;
+  background-color: transparent;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9em;
+  border: 0;
+  height: 24px;
+  margin-top: -5px;
+  border-radius: 0;
+  position: relative;
+  bottom: -1.2px;
+  outline: none;
+  margin-bottom: 0;
+  color: white;
+}
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#search svg{
+  float: left;
+  margin-left: 10px;
+  margin-top: -1.5px;
+  fill: #d1d1d1;
+}
+#search img{
+  float: right;
+  margin-top: -7px;
+  margin-right: 3px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+input[type="search"]:-webkit-autofill,
+input[type="search"]:-webkit-autofill:hover, 
+input[type="search"]:-webkit-autofill:focus, 
+input[type="search"]:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px rgb(54, 54, 54) inset !important;
+}
+
+footer{
+  background-color: rgba(0, 0, 0, 0.55);
+  color: white;
+  margin: 0;
+  width: fit-content;
+  height: 150px;
+  padding: 15px;
+  user-select: none;
+  backdrop-filter: blur(20px);
+  border-radius: 8px;
+  position: fixed;
+  float: right;
+  right: -400px;
+  transition: 250ms;
+  bottom: 0;
+  margin: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: coming-right 1.5s alternate 1.5s ease forwards;
+  border: 0.5px solid rgba(255, 255, 255, 0.15);
+}
+.going-notif{
+  animation: going-right 1.5s alternate ease forwards;
+}
+footer div img{
+  float: left;
+  justify-content: left;
+  justify-items: left;
+  text-align: left;
+  width: 20px;
+  height: 20px;
+  filter: hue-rotate(500deg) grayscale(400);
+}
+footer div p{
+  float: left;
+  text-align: left;
+  position: relative;
+  font-size: 0.7em;
+  margin-left: 5px;
+  margin-top: 1.5px;
+  font-weight: 300;
+  width: 85px;
+}
+footer div{
+  opacity: 0.9;
+}
+footer h2{
+  float: left;
+  text-align: left;
+  margin-top: 10px;
+  font-size: 1.3em;
+  font-weight: 400;
+  position: relative;
+  left: -103.5px;
+}
+footer p{
+  float: left;
+  text-align: left;
+  position: relative;
+  font-size: 0.9em;
+  margin-left: 6px;
+  margin-top: -10px;
+  font-weight: 300;
+  width: 300px;
+}
+footer button{
+  float: left;
+  width: 280px;
+  background-color: rgba(90, 86, 86, 0.35);
+  backdrop-filter: blur(20px);
+  color: white;
+  outline: none;
+  border: 3px solid transparent;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9em;
+  margin-top: -1px;
+  font-weight: 500;
+  transition: .3s;
+  cursor: pointer;
+}
+#open-notif{
+  width: 40px;
+  margin-left: 5px;
+  font-size: 1.1em;
+  padding: 2.5px;
+}
+footer button:hover{
+  border-color: rgba(255, 255, 255, 0.15);
+}
+footer button:active{
+  background-color: rgba(135, 133, 133, 0.35);
+  border-color: transparent;
+}
+
+#version{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 350;
+  font-size: 0.85em;
+  color: rgba(255, 255, 255, 0.2);
+  margin: 20px 20px;
+  backdrop-filter: blur(15px);
+  padding: 5px 10px;
+  border-radius: 7px;
+  user-select: none;
+  transition: 250ms;
+  cursor: help;
+}
+#version:hover{
+  color: rgba(255, 255, 255, 0.45);
+}
+#version i{
+  margin-right: 3px;
+}
+
+#taskbar{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+}
+#taskbar-clock{
+  position: fixed;
+  bottom: -9px;
+  color: white;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.77em;
+  line-height: 17.5px;
+  right: 58.5px;
+  z-index: 2;
+  background-color: #201c1c;
+  opacity: 0;
+  visibility: hidden;
+}

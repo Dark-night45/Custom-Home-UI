@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="assets/main.css" rel="stylesheet">
+    <link href="f-icon/css/all.css" rel="stylesheet">
+    <link rel="icon" href="assets/icon/google.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Customized HomeScreen</title>
+  </head>
+  <body>
+    <header>
+      <div id="clock">
+        <p id="clock-show">00 : 00 : 00</p>
+        <span id="date-show"></span>
+        <!-- The data is Shamsi -->
+      </div>
+      <div id="split">
+      </div>
+      <div id="link">
+        <div>
+          <a href="https://mail.google.com/mail/?authuser=0" title="Gmail" class="linkf1"><i class="fa-light fa-envelope"></i>Gmail</a>
+          <a href="https://web.whatsapp.com/" title="Whatsapp" class="linkf1"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+          <a href="https://drive.google.com/drive/u/0/" title="Google Drive"><i class="fa-brands fa-google-drive"></i>Google Drive</a>
+        </div>
+        <div>
+          <a href="https://github.com/dashboard/" title="Github" class="linkf1"><i class="fa-brands fa-github"></i>Github</a>
+          <a href="https://mp3fromyou.tube/" title="Youtube Downloader" class="linkf1"><i class="fa-light fa-cloud-arrow-down"></i>YT Downloader</a>
+          <a href="https://twitch.tv/" title="Twitch"><i class="fa-brands fa-twitch"></i>Twitch</a>
+        </div>
+      </div>
+      <div id="account">
+        <p>Your NickName</p>
+        <!-- You can copy your avatar to assets/avatar/ and put name here -->
+        <img draggable="false" alt="avatar" src="assets/avatar/0.webp" >
+        <span>Google Account<br>Your Name<br>your-email@gmail.com</span>
+      </div>
+    </header>
+    <main>
+      <center>
+        <img id="logo" src="assets/icon/google.svg" draggable="false">
+        <div id="search">
+          <form id="search-form" onsubmit="return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#5F6368"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            <input id="input" type="search" autocomplete="off" spellcheck="false" role="combobox" autofocus placeholder="Search Google or type a URL" aria-live="polite">
+          <img src="assets/icon/google_image.svg" width="24" draggable="false">
+        </form>
+        </div>
+      </center>
+    </main>
+    <!-- DON'T CHANGE THIS, if you want hide it you can put opacity to 0 in footer tag style -->
+    <footer id="notification" style="opacity: 1;">
+      <div>
+        <img src="assets/icon/chrome.png" draggable="false">
+        <p>Custom Home UI</p>
+      </div>
+      <br>
+        <h2>Welcome</h2>
+        <br>
+      <p>Welcome to customized Browser Home Screen UI maked by Dark_Night45 with <i title="HTML5" class="fa-brands fa-html5"></i>, <i title="CSS2" class="fa-brands fa-css3-alt"></i>, <i title="JavaScript" class="fa-brands fa-js"></i></p>
+      <center>
+        <button id="close-notif">Close Notification</button>
+        <button id="open-notif"><i class="fa-brands fa-github"></i></button>
+      </center>
+    </footer>
+    <p id="taskbar-clock">0:00 AM<br>1/01/1970</p>
+    <img draggable="false" src="assets/image/taskbar.png" id="taskbar">
+    <p id="version"><i class="fa-light fa-code-branch"></i> Veriosn 1.0</p>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
