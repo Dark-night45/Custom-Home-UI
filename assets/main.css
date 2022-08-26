@@ -349,7 +349,7 @@ footer button:active{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 350;
   font-size: 0.85em;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.25);
   margin: 20px 20px;
   backdrop-filter: blur(15px);
   padding: 5px 10px;
