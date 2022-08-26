@@ -10,3 +10,9 @@ After download, you need extract it then put extracted folder somewhere you like
 then go to your brower like chrome, and go to [Setting/Startup/](chrome://settings/onStartup)Open a specific page or set of pages and click on Add a new page; in site url you need put address of folder then click Add.
 now everytime you open chrome you see customized home screen.
 you can add this to new page and everytime open new page, you can see customized home screen.
+
+#### Chrome :
+![http://dark-night.rf.gd/github/Chrome-Custom-HomeScreen-UI.gif]
+
+#### Edge :
+![http://dark-night.rf.gd/github/Edge-Custom-HomeScreen-UI.gif]
