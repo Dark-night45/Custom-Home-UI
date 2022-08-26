@@ -54,8 +54,6 @@ function closeNotification(){
   setTimeout(500, setCookie("isClsoeNotification","true",35));
 }
 function openNotification(){
-  // window.location.href("https://github.com/Dark-Night45");
-  // document.URL link alan
   window.open('https://github.com/Dark-Night45', '_blank', 'location=yes,height=700,width=1100,scrollbars=yes,status=yes');
 }
 function submitSearch(){
@@ -68,9 +66,8 @@ function submitSearch(){
     if(isValidURL(searchInput) === true){
       window.location.replace(searchInput2);
     } else if(isValidURL(searchInput) === false){
-      window.location.replace("https://www.google.com/search?q=" + searchInput); //replace link
+      window.location.replace("https://www.google.com/search?q=" + searchInput);
     }
-    // window.location.href(""); html redirect (not work)
   }
 }
 
@@ -272,7 +269,7 @@ currentDate();
 let isFullScreen = false;
 window.addEventListener("keydown", (event) => {
   if (event.defaultPrevented) {
-    return; // Do nothing if the event was already processed
+    return;
   }
   switch (event.key) {
     case "F11":
@@ -285,7 +282,7 @@ window.addEventListener("keydown", (event) => {
       }
       break;
     default:
-      return; // Quit when this doesn't handle the key event.
+      return;
   }
   event.preventDefault();
 }, true);
@@ -294,9 +291,9 @@ var elem = document.documentElement;
 function openFullscreen() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
-  } else if (elem.webkitRequestFullscreen) { /* Safari */
+  } else if (elem.webkitRequestFullscreen) {
     elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE11 */
+  } else if (elem.msRequestFullscreen) {
     elem.msRequestFullscreen();
   }
   taskclock.style.opacity = 1;
@@ -309,9 +306,9 @@ function openFullscreen() {
 function closeFullscreen() {
   if (document.exitFullscreen) {
     document.exitFullscreen();
-  } else if (document.webkitExitFullscreen) { /* Safari */
+  } else if (document.webkitExitFullscreen) {
     document.webkitExitFullscreen();
-  } else if (document.msExitFullscreen) { /* IE11 */
+  } else if (document.msExitFullscreen) {
     document.msExitFullscreen();
   }
   taskclock.style.opacity = 0;
