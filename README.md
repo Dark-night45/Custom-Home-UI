@@ -12,8 +12,7 @@ now everytime you open chrome you see customized home screen.
 you can add this to new page and everytime open new page, you can see customized home screen.
 
 #### Google Chrome :
-![Chrome](http://dark-night.rf.gd/github/Chrome-Custom-HomeScreen-UI.gif)
+![Chrome](https://cdn.discordapp.com/attachments/830539152797859902/1012804764439953458/Chrome-Custom-HomeScreen-UI.gif)
 
 #### Microsoft Edge :
-![Edge](http://dark-night.rf.gd/github/Edge-Custom-HomeScreen-UI.gif)
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Edge](https://cdn.discordapp.com/attachments/830539152797859902/1012804752951754792/Edge-Custom-HomeScreen-UI.gif)
