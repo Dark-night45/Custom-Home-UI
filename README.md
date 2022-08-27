@@ -11,7 +11,7 @@ if you have lower resolution or higher you can hold ctrl and click + or - to res
 
 ### How download it ?
 For use, you need go to __Releases__ Section and click on last version
-then just click on Source-code.zip to download.
+then just click on _Source code(zip)_ to download.
 
 ### How use it ?
 After download, you need extract it then put extracted folder somewhere you like.
