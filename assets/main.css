@@ -191,6 +191,7 @@ main{
   padding: 10px 5px;
   margin-top: 35px;
   user-select: none;
+  transition: .4s;
 }
 #search input{
   overflow: hidden;
@@ -207,6 +208,10 @@ main{
   outline: none;
   margin-bottom: 0;
   color: white;
+}
+#search:hover{
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+
 }
 ::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
