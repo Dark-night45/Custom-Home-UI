@@ -1,4 +1,5 @@
 let clock = document.getElementById("clock-show");
+let notif_title = document.getElementById("notif-title");
 let close_notif = document.getElementById("close-notif");
 let open_notif = document.getElementById("open-notif");
 let notif = document.getElementById("notification");
@@ -34,6 +35,19 @@ function isValidURL(string) {
   var res = string.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g);
   return (res !== null)
 };
+if(new Date().getHours() <= 03){
+  notif_title.innerText = "Good Midnight";
+}else if(new Date().getHours() <= 05){
+  notif_title.innerText = "Good Morning";
+} else if(new Date().getHours() <= 11){
+  notif_title.innerText = "Good Noon";
+} else if(new Date().getHours() <= 14){
+  notif_title.innerText = "Good Afternoon";
+} else if(new Date().getHours() <= 17){
+  notif_title.innerText = "Good Evening";
+} else if(new Date().getHours() <= 20){
+  notif_title.innerText = "Good Night";
+}
 
 window.addEventListener("load", function(){
   if(getCookie("isClsoeNotification") === null){
@@ -43,7 +57,6 @@ window.addEventListener("load", function(){
     notif.style.opacity = 0;
   }
 })
-
 
 sf.addEventListener("submit", submitSearch);
 close_notif.addEventListener("click", closeNotification);
@@ -64,9 +77,15 @@ function submitSearch(){
     let searchInput = searchValue.replaceAll(' ', '+');
     let searchInput2 = encodeURIComponent(searchValue);
     if(isValidURL(searchInput) === true){
-      window.location.replace(searchInput2);
+      let furl;
+      if(searchValue.includes('https://') || searchValue.includes('http://')){
+        furl = "";
+      } else {
+        furl = "http://";
+      }
+      window.location.replace(furl + searchInput2);
     } else if(isValidURL(searchInput) === false){
-      window.location.replace("https://www.google.com/search?q=" + searchInput);
+      window.location.replace("https://google.com/search?q=" + searchInput);
     }
   }
 }
