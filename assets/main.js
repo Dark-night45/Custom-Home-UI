@@ -35,18 +35,20 @@ function isValidURL(string) {
   var res = string.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g);
   return (res !== null)
 };
-if(new Date().getHours() <= 03){
+if(new Date().getHours() === 03 || new Date().getHours() === 04){
   notif_title.innerText = "Good Midnight";
-}else if(new Date().getHours() <= 05){
+} else if(new Date().getHours() === 05 || new Date().getHours() === 06 || new Date().getHours() === 07 || new Date().getHours() === 08 || new Date().getHours() === 09 || new Date().getHours() === 10){
   notif_title.innerText = "Good Morning";
-} else if(new Date().getHours() <= 11){
+} else if(new Date().getHours() === 11 || new Date().getHours() === 12 || new Date().getHours() === 13){
   notif_title.innerText = "Good Noon";
-} else if(new Date().getHours() <= 14){
+} else if(new Date().getHours() === 14 || new Date().getHours() === 15 || new Date().getHours() === 16){
   notif_title.innerText = "Good Afternoon";
-} else if(new Date().getHours() <= 17){
+} else if(new Date().getHours() === 17 || new Date().getHours() === 18 || new Date().getHours() === 19){
   notif_title.innerText = "Good Evening";
-} else if(new Date().getHours() <= 20){
+} else if(new Date().getHours() === 20 || new Date().getHours() === 21 || new Date().getHours() === 22 || new Date().getHours() === 23 || new Date().getHours() === 00 || new Date().getHours() === 01 || new Date().getHours() === 02){
   notif_title.innerText = "Good Night";
+} else {
+  notif_title.innerText = "Hmmm...";
 }
 
 window.addEventListener("load", function(){
