@@ -19,8 +19,12 @@ then go to your brower like chrome, and go to [Setting/Startup/](chrome://settin
 now everytime you open chrome you see customized home screen.
 you can add this to new page and everytime open new page, you can see customized home screen.
 
-#### Google Chrome :
+````{tab-set}
+```{tab-item} Google Chrome
 ![Chrome](https://cdn.discordapp.com/attachments/830539152797859902/1012804764439953458/Chrome-Custom-HomeScreen-UI.gif)
+```
 
-#### Microsoft Edge :
+```{tab-item} Microsoft Edge
 ![Edge](https://cdn.discordapp.com/attachments/830539152797859902/1012804752951754792/Edge-Custom-HomeScreen-UI.gif)
+```
+````
