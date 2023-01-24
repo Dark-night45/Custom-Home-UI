@@ -1,0 +1,32 @@
+:root{
+  /* Main & header */
+  --border-radius : 7px;
+  --box-light-background-color : rgba(0, 0, 0, 0.06);
+  --box-link-background-color : transparent;
+  --box-hover-background-color : rgba(201, 201, 201, 0.05);
+  --clock-color : white;
+  --date-color : rgba(255, 255, 255, 0.7);
+  --box-text-color : white;
+  --box-link-color : white;
+  --link-icon-color : rgba(255, 255, 255, 0.9);
+  --font : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --blur : 30px;
+  /* Search */
+  --search-background-color : rgba(0, 0, 0, 0.1);
+  --search-placeholder-color : rgba(255, 255, 255, 0.5);
+  --search-border-color : rgba(255, 255, 255, 0.3);
+  --search-text-color : white;
+  /* Fast access */
+  --fc-box-light-background-color : rgba(0, 0, 0, 0.05);
+  --fc-blur : 20px;
+  --fc-box-text-color : rgba(255, 255, 255, 0.9);
+  --fc-border-radius : 8px;
+  --fc-img-background-color : rgba(32, 28, 28, 0.75);/*#201c1c*/
+  /* Notification */
+  --notification-background-color : rgba(0, 0, 0, 0.5);
+  --notification-text-color : white;
+  --notification-border-radius : 8px;
+  --notification-button-background-color : rgba(90, 86, 86, 0.35);
+  --notification-button-background-color-hover : rgba(255, 255, 255, 0.15);
+  --notification-button-background-color-active : rgba(135, 133, 133, 0.3);
+}
