@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="assets/main.css" rel="stylesheet">
+    <link href="assets/style/config.css" rel="stylesheet">
+    <link href="assets/style/main.css" rel="stylesheet">
     <link href="f-icon/css/all.css" rel="stylesheet">
     <link rel="icon" href="assets/icon/google.jpg" type="image/x-icon">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Customized HomeScreen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized Home Page</title>
   </head>
-  <body>
+  <body id="body">
     <header>
       <div id="clock">
         <p id="clock-show">00 : 00 : 00</p>
@@ -19,21 +20,21 @@
       </div>
       <div id="link">
         <div>
-          <a href="https://mail.google.com/mail/?authuser=0" title="Gmail" class="linkf1"><i class="fa-light fa-envelope"></i>Gmail</a>
-          <a href="https://web.whatsapp.com/" title="Whatsapp" class="linkf1"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+          <a href="https://mail.google.com/mail/?authuser=0" title="Gmail"><i class="fa-light fa-envelope"></i>Gmail</a>
+          <a href="https://web.whatsapp.com/" title="Whatsapp"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
           <a href="https://drive.google.com/drive/u/0/" title="Google Drive"><i class="fa-brands fa-google-drive"></i>Google Drive</a>
         </div>
         <div>
-          <a href="https://github.com/dashboard/" title="Github" class="linkf1"><i class="fa-brands fa-github"></i>Github</a>
-          <a href="https://mp3fromyou.tube/" title="Youtube Downloader" class="linkf1"><i class="fa-light fa-cloud-arrow-down"></i>YT Downloader</a>
+          <a href="https://github.com/" title="Github"><i class="fa-brands fa-github"></i>Github</a>
+          <a href="https://youtube.com/" title="Youtube"><i class="fa-brands fa-youtube"></i>Youtube</a>
           <a href="https://twitch.tv/" title="Twitch"><i class="fa-brands fa-twitch"></i>Twitch</a>
         </div>
       </div>
       <div id="account">
-        <p>Your NickName</p>
+        <p id="accname">Cat</p>
         <!-- You can copy your avatar to assets/avatar/ and put name here -->
         <img draggable="false" alt="avatar" src="assets/avatar/0.webp" >
-        <span>Google Account<br>Your Name<br>your-email@gmail.com</span>
+        <span>Google Account<br><object id="desname"></object><br>your-email@gmail.com</span>
       </div>
     </header>
     <main>
@@ -46,6 +47,20 @@
           <img src="assets/icon/google_image.svg" width="24" draggable="false">
         </form>
         </div>
+        <div id="fast-access">
+          <div id="fc.discord" class="fc-box">
+            <div style="background-image: url(assets/icon/svgs/discord.svg);background-position: 14.5px;"></div>
+            <p>Discord</p>
+          </div>
+          <div id="fc.twitter" class="fc-box">
+            <div style="background-image: url(assets/icon/svgs/twitter.svg);"></div>
+            <p>Twitter</p>
+          </div>
+          <div id="fc.instagram" class="fc-box">
+            <div style="background-image: url(assets/icon/svgs/instagram.svg);"></div>
+            <p>Instagram</p>
+          </div>
+        </div>
       </center>
     </main>
     <!-- DON'T CHANGE THIS, if you want hide it you can put display to none in footer tag style -->
@@ -57,15 +72,19 @@
       <br>
         <h2 id="notif-title">Pssss...</h2>
         <br>
-      <p>Welcome to customized Browser Home Screen UI maked by Dark_Night45 with <i class="fa-brands fa-html5"></i>, <i class="fa-brands fa-css3-alt"></i>, <i class="fa-brands fa-js"></i></p>
+      <p id="wb">Welcome to customized browser home ui</p>
       <center>
         <button id="close-notif">Close Notification</button>
         <button id="open-notif"><i class="fa-brands fa-github"></i></button>
       </center>
     </footer>
-    <p id="taskbar-clock">0:00 AM<br>1/01/1970</p>
-    <img draggable="false" src="assets/icon/taskbar.png" id="taskbar">
-    <p id="version"><i class="fa-light fa-code-branch"></i> Version 1.2</p>
-    <script src="assets/main.js"></script>
+    <!-- DON'T CHANGE THIS, if you want hide it you can put display to none in footer tag style -->
+    <div id="taskbar" style="display: unset;">
+      <p id="taskbar-clock">0:00 AM<br>1/01/1970</p>
+      <img draggable="false" src="assets/icon/taskbar0.png" id="taskbar-img">
+    </div>
+    <p id="version"><i class="fa-light fa-code-branch"></i> Veriosn 1.3</p>
+    <script src="assets/javascript/main.js"></script>
+    <script src="assets/javascript/click.js"></script>
   </body>
 </html>
