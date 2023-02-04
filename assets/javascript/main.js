@@ -108,7 +108,6 @@ function submitSearch(){
     return false;
   } else {
     let searchInput = searchValue.replaceAll(' ', '+');
-    alert(isValidURL(searchInput));
     if(isValidURL(searchInput) == true){
       let furl;
       if(searchValue.includes('https://', 'http://')){
